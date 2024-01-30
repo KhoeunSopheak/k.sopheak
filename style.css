@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgb(224, 225, 226);
+    color: black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(204, 196, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+}
+.logo{
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    color: rgb(162, 0, 255);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px; 
+    margin-top: auto;  
+}
+.navbar > a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: auto;
+    margin-right: 60px;
+    font-family: sans-serif;
+}
+.navbar > a:hover{
+    border-bottom: 1px solid rgb(162, 0, 255);
+    color: rgb(162, 0, 255);
+}
+.section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+.den{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 96vh;
+}
+.den-img{
+    border-radius: 50%;
+}
+.den-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(238, 236, 238);
+}
+.den-cotent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem; 
+}
+.den-content h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+.den-content h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.den-content p{
+    font-size: 25px;
+    text-align: center;
+}
+.social-icon{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 50px;
+    margin-left: 41%;
+    font-size: 40px;
+    color: blueviolet;
+}
+.button{
+    
+    background-color: rgb(158, 29, 233); 
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 22px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 43%;
+    margin-top: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}.button:hover{
+    box-shadow: 0px 0px 20px rgb(162, 0, 255);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+.about img{
+    border-radius: 50%;
+}
+.about-img img{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 5%;
+
+}
+.heading{
+    text-align: center;
+    font-size: 8rem;
+}
+.about-content h2{
+    text-align: left;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: 15px;
+    line-height: 0.75;
+}
+.about-content h2 span{
+    font-size: 5rem;
+    color: rgb(162, 0, 255);
+    font-weight: 800; 
+}
+.about-content h3{
+    text-align: left;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.about p{
+    font-size: 30px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+} 
+.button-1{
+    
+    background-color: rgb(158, 29, 233); 
+    color: white;
+    padding: 12px 28px;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 22px;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}.button-1:hover{
+    box-shadow: 0px 0px 20px rgb(162, 0, 255);
+}
+.Project{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 218, 221);
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+.Project-content{
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.heading{
+    position: flex;
+    text-align: center;
+    font-size: 5rem;
+}
+.project-box{
+    position: relative;
+    width: 500px;
+    border: 5px solid rgb(162, 0, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 22px;
+    float: left;
+}
+.project-box h3{
+    font-size: 2rem;
+    margin-top: 5px;
+    text-align: left;
+    margin-top: 15px;
+
+}
+.project-box p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.contact{
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    height: 100vh;
+}    
+.contact h2{
+    margin-bottom: 3rem;
+
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.contact form .input-box,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 4px solid blueviolet;
+    margin: 1rem 0;
+    resize: none;
+    border-radius: 10px;
+
+}
+.contact form .btn{
+    margin-top: 3rem;
+    padding: 25px ;
+    background-color: blueviolet;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: rgb(226, 223, 223);
+}
+
