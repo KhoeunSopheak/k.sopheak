@@ -56,7 +56,7 @@ body {
   font-family: sans-serif;
 }
 .navbar > a:hover {
-  border-bottom: 1px solid rgb(162, 0, 255);
+  border-bottom: 2px solid rgb(162, 0, 255);
   color: rgb(162, 0, 255);
 }
 .section {
@@ -70,7 +70,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  height: 96vh;
+  height: 100vh;
 }
 .den-img {
   border-radius: 50%;
@@ -84,7 +84,8 @@ body {
   width: 430px;
   height: 430px;
   border-radius: 50%;
-  box-shadow: 0px 0px 20px rgb(238, 236, 238);
+  box-shadow: 0px 0px 10px rgb(162, 0, 255);
+  border: 1rem solid blueviolet;
 }
 .den-cotent {
   display: flex;
@@ -156,6 +157,7 @@ body {
   height: 500px;
   border-radius: 50%;
   margin-left: 5%;
+  border: 1rem solid blueviolet;
 }
 .heading {
   text-align: center;
@@ -178,12 +180,13 @@ body {
   font-size: 2.6rem;
   font-weight: 800;
   margin-top: 15px;
-  line-height: 1.5;
+  line-height: 4rem;
 }
 .about p {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 15px;
-  line-height: 30px;
+  line-height: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .about {
   display: flex;
@@ -194,12 +197,12 @@ body {
 .button-1 {
   background-color: rgb(158, 29, 233);
   color: white;
-  padding: 12px 28px;
+  padding: 14px 36px;
   text-align: left;
   display: inline-block;
   font-size: 16px;
   border-radius: 22px;
-  margin-top: 20px;
+  margin-top: 25px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .button-1:hover {
@@ -238,6 +241,21 @@ body {
   border-radius: 22px;
   float: left;
 }
+.button-2 {
+  position: absolute; 
+  margin-top: 47%;
+  background-color: rgb(158, 29, 233);
+  color: white;
+  padding: 14px 36px;
+  text-align: left;
+  font-size: 18px;
+  border-radius: 22px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button-2 a:hover {
+  box-shadow: 0px 0px 20px rgb(162, 0, 255);
+  color: white;
+}
 .project-box:hover {
   background-color: blueviolet;
   color: white;
@@ -247,6 +265,7 @@ body {
   margin-top: 5px;
   text-align: left;
   margin-top: 15px;
+  color: black;
 }
 .project-box p {
   padding: 5px;
@@ -260,7 +279,12 @@ body {
   height: 105vh;
 }
 .contact h2 {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  color: lightblue;
+}
+.contact-content h1 {
+  text-align: center;
   font-size: 5rem;
 }
 .contact form {
@@ -295,7 +319,7 @@ body {
 }
 .contact form .btn {
   width: 18rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 10px;
   border-radius: 50px;
   font-size: 1.5rem;
@@ -330,7 +354,7 @@ body {
   background-color: rgb(237, 238, 238);
   color: black;
   width: 100%;
-  height: 91vh;
+  height: 100vh;
   
 }
 .resume-img img{
@@ -358,7 +382,7 @@ body {
 .resume-content1 p{
   font-size: 2rem;
   margin-top: 1rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   margin-left: 8%;
   
 }
@@ -378,7 +402,7 @@ body {
 }
 .resume-content2 ul li{
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   font-weight: 300;
   margin-left: 9.5%;
 }
@@ -387,7 +411,7 @@ body {
 }
 .me2 ul{
   display: flex;
-  margin-top: 11rem;
+  margin-top: 10rem;
   justify-content: space-around;
   font-size: 20px;
 }
