@@ -9,9 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   body {
-    background-image: url(images/anime_boyz.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(224, 225, 226);
     color: black;
   }
   .header {
@@ -84,11 +82,10 @@
   .content1 h1{
     font-size: 3rem;
     margin-left: 25%;
-    color: yellow;
+    
   }
   .content2{
     font-size: 3rem;
     margin-left: 6%;
     margin-top: -5%;
-    color: blue;
   }
