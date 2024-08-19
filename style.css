@@ -6,39 +6,46 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 body {
-  background-color: rgb(224, 225, 226);
+  background-color: rgb(0, 0, 0);
   color: black;
 }
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0.5rem;
-  background-color: rgb(204, 196, 211);
+  background: linear-gradient(to right, rgb(135, 1, 140), rgb(0, 0, 0));
+  box-shadow: 0px 0px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
+
 .logo {
   display: flex;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   cursor: pointer;
   transition: 0.3s ease;
   margin-left: 10px;
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
+
 .logo span {
-  color: rgb(162, 0, 255);
+  color: rgb(255, 255, 255);
 }
+
 .navbar {
   width: 100%;
   display: flex;
@@ -46,23 +53,27 @@ body {
   padding: 15px;
   margin-top: auto;
 }
-.navbar > a {
+
+.navbar>a {
   font-size: 1.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 8px 16px;
   margin-top: auto;
   margin-right: 60px;
   font-family: sans-serif;
 }
-.navbar > a:hover {
+
+.navbar>a:hover {
   border-bottom: 2px solid rgb(162, 0, 255);
   color: rgb(162, 0, 255);
 }
+
 .section {
   min-height: 100vh;
   padding: 10rem 9% 10rem;
 }
+
 .den {
   display: flex;
   justify-content: center;
@@ -72,10 +83,8 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 .den-img {
-  border-radius: 50%;
-}
-.den-img img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,9 +93,17 @@ body {
   width: 430px;
   height: 430px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgb(162, 0, 255);
-  border: 1rem solid blueviolet;
+  box-shadow: 0px 0px 25px rgb(208, 0, 255);
+  border: 1rem solid rgb(255, 255, 255);
 }
+
+.den-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .den-cotent {
   display: flex;
   flex-direction: column;
@@ -95,19 +112,107 @@ body {
   justify-content: center;
   margin-top: 3rem;
 }
+
 .den-content h1 {
   font-size: 60px;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
+
 .den-content h3 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 5px;
+  position: relative;
+  color: rgb(255, 255, 255);
 }
+
+.den-content h3 span::before {
+  content: "Full-Stack developer";
+  color: rgb(162, 0, 255);
+  animation: words 20s infinite;
+}
+
+.den-content h3 span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background: rgb(0, 0, 0);
+  /* right: -8px; */
+  border-left: 2px solid blueviolet;
+  animation: cursor .8s infinite, typing 20s steps(14);
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid rgb(255, 255, 255);
+  }
+}
+
+@keyframes words {
+
+  0%,
+  20% {
+    content: "Full-Stack developer";
+  }
+
+  21%,
+  40% {
+    content: "Web developer";
+  }
+
+  41%,
+  60% {
+    content: "Designer";
+  }
+
+  61%,
+  80% {
+    content: "Front-end";
+  }
+
+  81%,
+  100% {
+    content: "Back-end";
+  }
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+
+}
+
 .den-content p {
   font-size: 25px;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
+
 .social-icon {
   display: inline-block;
   flex-direction: column;
@@ -118,18 +223,22 @@ body {
   margin-right: 50px;
   margin-left: 41%;
   font-size: 40px;
-  color: blueviolet;
+  color: rgb(162, 0, 255);
 }
-.stack-icon{
+
+.stack-icon {
   position: absolute;
   margin-top: 30px;
 }
-.stack-icon i{
+
+.stack-icon i {
   font-size: 35px;
 }
-.stack-icon p{
+
+.stack-icon p {
   font-size: 30px;
 }
+
 .button {
   background-color: rgb(158, 29, 233);
   color: white;
@@ -144,35 +253,43 @@ body {
   margin-top: 40px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .button:hover {
   box-shadow: 0px 0px 20px rgb(162, 0, 255);
 }
+
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: rgb(0, 0, 0);
   color: black;
   width: 100%;
-  height: 100vh;
+  height: 100vh
 }
-.about img {
+
+/* .about img {
   border-radius: 50%;
-}
+} */
+
 .about-img img {
   display: block;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
+  width: 700px;
+  height: 400px;
+  /* border-radius: 50%; */
   margin-left: 5%;
-  border: 1rem solid blueviolet;
+  box-shadow: 0px 0px 25px rgb(162, 0, 255);
+  border: 1.5px solid rgb(162, 0, 255);
 }
+
 .heading {
   text-align: center;
   font-size: 8rem;
+  color: rgb(254, 253, 254);
 }
+
 .about-content h2 {
   text-align: left;
   font-size: 5rem;
@@ -180,30 +297,37 @@ body {
   margin-top: 15px;
   line-height: 0.75;
 }
+
 .about-content h2 span {
   font-size: 5rem;
   color: rgb(162, 0, 255);
   font-weight: 800;
 }
+
 .about-content h3 {
   text-align: left;
   font-size: 2.6rem;
   font-weight: 800;
   margin-top: 15px;
   line-height: 4rem;
+  color: white;
 }
+
 .about p {
   font-size: 28px;
   margin-top: 15px;
   line-height: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
+
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10rem;
 }
+
 .button-1 {
   background-color: rgb(158, 29, 233);
   color: white;
@@ -215,18 +339,21 @@ body {
   margin-top: 25px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .button-1:hover {
   box-shadow: 0px 0px 20px rgb(162, 0, 255);
 }
+
 .Project {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(210, 218, 221);
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 100%;
   height: 100vh;
 }
+
 .Project-content {
   position: fixed;
   flex-direction: column;
@@ -235,11 +362,14 @@ body {
   justify-content: center;
   margin-top: 3rem;
 }
+
 .heading {
   position: flex;
   text-align: center;
   font-size: 5rem;
+  color: blueviolet;
 }
+
 .project-box {
   position: relative;
   width: 500px;
@@ -251,8 +381,9 @@ body {
   border-radius: 22px;
   float: left;
 }
+
 .button-2 {
-  position: absolute; 
+  position: absolute;
   margin-top: 47%;
   background-color: rgb(158, 29, 233);
   color: white;
@@ -262,47 +393,55 @@ body {
   border-radius: 22px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .button-2 a:hover {
   box-shadow: 0px 0px 20px rgb(162, 0, 255);
   color: white;
 }
+
 .project-box:hover {
   background-color: blueviolet;
   color: white;
 }
+
 .project-box h3 {
   font-size: 2rem;
   margin-top: 5px;
   text-align: left;
   margin-top: 15px;
-  color: black;
+  color: rgb(249, 240, 240);
 }
+
 .project-box p {
   padding: 5px;
   font-size: 18px;
 }
 
 .contact {
-  background-color: lightblue;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 100%;
   height: 105vh;
 }
+
 .contact h2 {
   margin-bottom: 5rem;
   font-size: 1rem;
   color: lightblue;
 }
+
 .contact-content h1 {
   text-align: center;
   font-size: 5rem;
 }
+
 .contact form {
   max-width: 60rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
+
 .contact form .input-box {
   display: flex;
   /* justify-content: center;
@@ -327,107 +466,128 @@ body {
   resize: none;
   border-radius: 10px;
 }
+
 .contact form .btn {
   width: 18rem;
   margin-top: 2rem;
   padding: 10px;
   border-radius: 50px;
   font-size: 1.5rem;
-  color: rgb(226, 223, 223);
+  color: rgb(255, 255, 255);
   border: 3px solid blueviolet;
   background-color: blueviolet;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.contact form .btn:hover{
+
+.contact form .btn:hover {
   box-shadow: 0px 0px 20px rgb(162, 0, 255);
 }
-.contact-content h2{
+
+.contact-content h2 {
   text-align: center;
 }
-.me{
+
+.me {
   font-family: Arial, Helvetica, sans-serif;
 }
-.me ul{
+
+.me ul {
   display: flex;
   margin-top: -1.5rem;
   justify-content: space-around;
   font-size: 20px;
 }
-.me ul li{
+
+.me ul li {
   list-style: none;
 }
-.me ul li span{
+
+.me ul li span {
   font-weight: bold;
 }
-.resume{
+
+.resume {
   display: inline-block;
-  background-color: rgb(237, 238, 238);
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 100%;
   height: 100vh;
-  
+
 }
-.resume-img img{
+
+.resume-img img {
   display: flex;
   margin-left: 72%;
   width: 350px;
   height: 400px;
   margin-top: -35%;
 }
-.resume-img ul{
+
+.resume-img ul {
   margin-left: 72%;
   margin-top: 20px;
   list-style: none;
   font-size: 20px;
   line-height: 2rem;
 }
-.resume ul span{
+
+.resume ul span {
   font-weight: bold;
 }
-.resume-content1{
+
+.resume-content1 {
   font-size: 1.5rem;
   margin-top: 10rem;
 
 }
-.resume-content1 p{
+
+.resume-content1 p {
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 2.5rem;
   margin-left: 8%;
-  
+
 }
-.resume-content1 h1{
+
+.resume-content1 h1 {
   color: blueviolet;
   font-size: 3rem;
   margin-left: 8%;
 }
-.resume-content2{
+
+.resume-content2 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
 }
-.resume-content2 h1{
+
+.resume-content2 h1 {
   color: blueviolet;
   font-size: 3rem;
   margin-left: 8%;
 }
-.resume-content2 ul li{
+
+.resume-content2 ul li {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 300;
   margin-left: 9.5%;
 }
-.me2{
-  font-family: Arial, Helvetica, sans-serif;
+
+.me2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.me2 ul{
+
+.me2 ul {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 15rem;
   justify-content: space-around;
   font-size: 20px;
 }
-.me2 ul li{
+
+.me2 ul li {
   list-style: none;
 }
-.m2e ul li span{
+
+.m2e ul li span {
   font-weight: bold;
 }
