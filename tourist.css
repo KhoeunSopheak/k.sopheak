@@ -9,6 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   body {
+    height: 100vh;
     background-image: url(images/cambodia.jpg);
     background-size: cover;
     color: black;
